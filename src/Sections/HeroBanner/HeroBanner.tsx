@@ -1,6 +1,6 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faCircle } from "@fortawesome/free-solid-svg-icons";
+import "./styles.css";
 
 function HeroBanner() {
     const sections = ["Home", "About", "Projects", "Contact"];
@@ -13,15 +13,17 @@ function HeroBanner() {
     ));
 
     return (
-        <div className="app-container">
-            <div className="h-dvh flex flex-col justify-center items-center gap-8">
+        <div className="app-container h-dvh">
+            <div className="flex flex-col justify-center items-center gap-8 h-full">
                 <div className="text-center">
-                    <h1 className="text-[13vw]/8">Max García</h1>
-                    <span className="pretty-text text-[8.5vw] text-custom-red">Web Developer</span>
+                    <h1 className="text-[13vw] leading-none">Max García</h1>
+                    <span className="pretty-text text-[8.5vw] text-custom-red leading-none">
+                        Web Developer
+                    </span>
                 </div>
                 <nav className="flex w-screen justify-evenly sticky top-0">{navBar}</nav>
-                <div className="absolute bottom-4 text-center">
-                    <p className="opacity-50 mb-4 leading-5">
+                <div className="absolute bottom-6 text-center">
+                    <p className="opacity-50 mb-5 leading-5 text-center">
                         Let's know each
                         <br /> other
                     </p>
