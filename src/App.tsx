@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./Sections/About/About";
+import Contact from "./Sections/Contact/Contact";
 import HeroBanner from "./Sections/HeroBanner/HeroBanner";
 import Projects from "./Sections/Projects/Projects";
 
@@ -15,6 +16,12 @@ function App() {
             <div>
                 <Projects />
             </div>
+            <div>
+                <Contact />
+            </div>
+            <footer className="py-4 text-center">
+                <p>Design and Built by Max García</p>
+            </footer>
         </div>
     );
 }
