@@ -6,10 +6,10 @@ import { TbBrandJavascript } from "react-icons/tb";
 function About() {
     return (
         <div className="app-container flex flex-col gap-10">
-            <div className="h-48 w-auto aspect-square bg-custom-dotted rounded-full mx-auto"></div>
+            <div className="h-48 w-auto aspect-square bg-custom-lined rounded-full mx-auto"></div>
             <div>
                 <h2>About Me</h2>
-                <p>
+                <p className="text-justify">
                     I’m a web developer based in Dominican Republic. I started my journey programming with
                     Python 2 years ago, currently I’m working with JavaScript to make simple and useful
                     web applications.

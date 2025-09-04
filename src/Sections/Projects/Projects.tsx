@@ -1,55 +1,15 @@
-import React from "react";
-import testImg from "./assets/testproj.jpg";
+import { starredProjectsList } from "./assets/projectsList";
+import StarredProject from "./Components/StarredProject";
 
 function Projects() {
-    type project = {
-        title: string;
-        image?: string;
-        description: string;
-        stack: string[];
-        linkWeb?: string;
-        linkRepo?: string;
-    };
-
-    const starredProjects: project[] = [
-        {
-            title: "Project 1",
-            image: testImg,
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue. Vestibulum auctorentum sit amet. Pellentesque commodo lacus at sodale",
-            stack: [
-                "Technology",
-                "Technology",
-                "Technology",
-                "Technology",
-                "Technology",
-                "Technology",
-                "Technology",
-            ],
-            linkWeb: "testLink",
-            linkRepo: "testLink",
-        },
-        {
-            title: "Project 1",
-            image: testImg,
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue. Vestibulum auctorentum sit amet. Pellentesque commodo lacus at sodale",
-            stack: [
-                "Technology2",
-                "Technology2",
-                "Technology2",
-                "Technology2",
-                "Technology2",
-                "Technology2",
-                "Technology2",
-            ],
-            linkWeb: "testLink",
-        },
-    ];
+    const starredProjects = starredProjectsList.map((project, key) => (
+        <StarredProject project={project} key={key} />
+    ));
 
     return (
-        <div className="app-container flex flex-col gap-10">
+        <div className="app-container flex flex-col">
             <h2>Projects</h2>
+            <div className="flex flex-col gap-y-10">{starredProjects}</div>
         </div>
     );
 }
