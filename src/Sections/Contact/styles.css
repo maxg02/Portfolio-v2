@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.contact-button {
+    width: 25vw;
+    @apply aspect-square flex items-center justify-center border-neutral-600 border-4 text-neutral-600;
+    transition: all 0.3s ease-out;
+}
+
+.contact-button:hover {
+    @apply text-white border-0;
+}
+
+.contact-button > * {
+    @apply -rotate-45;
+    font-size: 10vw;
+    color: inherit;
+}
