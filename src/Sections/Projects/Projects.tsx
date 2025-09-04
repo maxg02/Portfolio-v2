@@ -1,4 +1,5 @@
-import { starredProjectsList } from "./assets/projectsList";
+import { commonProjectsList, starredProjectsList } from "./assets/projectsList";
+import CommonProject from "./Components/CommonProject";
 import StarredProject from "./Components/StarredProject";
 
 function Projects() {
@@ -6,10 +7,16 @@ function Projects() {
         <StarredProject project={project} key={key} />
     ));
 
+    const commonProjects = commonProjectsList.map((project, key) => (
+        <CommonProject project={project} key={key} />
+    ));
+
     return (
         <div className="app-container flex flex-col">
             <h2>Projects</h2>
-            <div className="flex flex-col gap-y-10">{starredProjects}</div>
+            <div className="flex flex-col gap-y-9 mb-9">{starredProjects}</div>
+            <h3>Other Projects</h3>
+            <div className="grid grid-cols-1 auto-rows-auto gap-3">{commonProjects}</div>
         </div>
     );
 }
