@@ -1,0 +1,5 @@
+@keyframes spin_reverse {
+    to {
+        transform: rotate(-360deg);
+    }
+}
