@@ -9,12 +9,12 @@ function Contact() {
         <div className="app-container h-dvh flex items-center justify-center flex-col gap-y-9">
             <div className="grid grid-cols-2 grid-rows-2 w-fit gap-4 rotate-45">
                 <a href="mailto:maxdanielgs@hotmail.com" target="_blank" rel="noreferrer">
-                    <div className="contact-button hover:-translate-2 hover:bg-custom-red">
+                    <div className="contact-button hover:-translate-2 bg-custom-red">
                         <HiOutlineMail />
                     </div>
                 </a>
                 <a href="https://github.com/maxg02" target="_blank" rel="noreferrer">
-                    <div className="contact-button hover:-translate-y-2 hover:translate-x-2 hover:bg-custom-red">
+                    <div className="contact-button hover:-translate-y-2 hover:translate-x-2 bg-custom-red">
                         <VscGithub />
                     </div>
                 </a>
@@ -23,7 +23,7 @@ function Contact() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <div className="contact-button hover:translate-y-2 hover:-translate-x-2 hover:bg-custom-red">
+                    <div className="contact-button hover:translate-y-2 hover:-translate-x-2 bg-custom-red">
                         <PiLinkedinLogoBold />
                     </div>
                 </a>
