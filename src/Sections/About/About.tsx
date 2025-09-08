@@ -20,15 +20,15 @@ function About() {
                 <div className="aspect-square h-[80%] relative animate-[spin_reverse_12s_linear_infinite] ">
                     <img
                         src={laptopimg}
-                        className="absolute left-0 top-1/2 -translate-1/2 h-24 animate-[spin_12s_linear_infinite]"
+                        className="absolute left-0 top-1/2 -translate-1/2 h-[65%] animate-[spin_12s_linear_infinite]"
                     />
                     <img
                         src={cupimg}
-                        className="absolute right-0 bottom-0 h-12 animate-[spin_12s_linear_infinite]"
+                        className="absolute right-0 bottom-0 h-[32%] animate-[spin_12s_linear_infinite]"
                     />
                     <img
                         src={mouseimg}
-                        className="absolute right-0 top-0 h-12 animate-[spin_12s_linear_infinite]"
+                        className="absolute right-0 top-0 h-[31%] animate-[spin_12s_linear_infinite]"
                     />
                 </div>
             </div>
