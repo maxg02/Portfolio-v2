@@ -88,3 +88,8 @@ span {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.pretty-text {
+    font-family: MonteCarlo;
+    font-weight: normal;
+}

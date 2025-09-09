@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faCircle } from "@fortawesome/free-solid-svg-icons";
-import "./styles.css";
 
 function HeroBanner() {
     const sections = ["Home", "About", "Projects", "Contact"];

@@ -34,10 +34,16 @@ function About() {
             </div>
             <div>
                 <h2>About Me</h2>
+                <p className="text-justify mb-3">
+                    I'm a &nbsp;
+                    <span className="text-custom-red pretty-text text-2xl">Web Developer</span>&nbsp;
+                    based in Dominican Republic. I hold a technical degree in Cybersecurity and I'm
+                    currently pursuing a degree in Software Engineering.
+                </p>
                 <p className="text-justify">
-                    I’m a web developer based in Dominican Republic. I started my journey programming with
-                    Python 2 years ago, currently I’m working with JavaScript to make simple and useful
-                    web applications.
+                    I started as a self-taught developer a few years ago and since then I've been
+                    passionate about building efficient, scalable and visually appealing websites using
+                    modern technologies.
                 </p>
             </div>
 
@@ -47,7 +53,7 @@ function About() {
                     <Card className="w-full">
                         <div className="flex justify-between items-center">
                             <h4>Frontend</h4>
-                            <CgWebsite className=" text-4xl" />
+                            <CgWebsite className="text-4xl" />
                         </div>
                         <ul className="list-disc list-inside">
                             <li>
