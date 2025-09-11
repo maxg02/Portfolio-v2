@@ -93,3 +93,20 @@ span {
     font-family: MonteCarlo;
     font-weight: normal;
 }
+
+nav {
+    transition: all 0.5s linear;
+}
+
+nav .nav-dot {
+    @apply h-3.5 w-3.5 bg-neutral-400/20 rounded-full;
+    transition: all 0.3s linear;
+}
+
+nav.is-pinned {
+    @apply shadow-md;
+}
+
+nav.is-pinned .nav-dot {
+    @apply rounded-[3px] w-full h-2 -mt-1;
+}
