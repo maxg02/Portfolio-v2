@@ -13,7 +13,7 @@ function Projects() {
 
     return (
         <div className="app-container flex flex-col">
-            <h2>Projects</h2>
+            <h2 className="text-center">Projects</h2>
             <div className="flex flex-col gap-y-9 mb-9">{starredProjects}</div>
             <h3>Other Projects</h3>
             <div className="grid grid-cols-1 auto-rows-auto gap-3">{commonProjects}</div>

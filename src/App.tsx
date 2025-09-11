@@ -30,7 +30,7 @@ function App() {
 
     return (
         <div id="appContainer">
-            <div ref={banner} className="text-center pb-8">
+            <div ref={banner} className="text-center pb-8 md:pb-28">
                 <h1 className="text-[13vw] leading-none">Max García</h1>
                 <span className="pretty-text text-[8.5vw] text-custom-red leading-none">
                     Web Developer

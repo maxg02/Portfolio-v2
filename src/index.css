@@ -41,7 +41,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .app-container {
-    @apply px-8 w-screen py-6;
+    @apply px-8 w-screen py-6 md:px-14;
 }
 
 h1 {
@@ -53,7 +53,6 @@ h2 {
     font-family: Poppins;
     font-weight: 600;
     font-size: 2.9em;
-    text-align: center;
     margin-bottom: 0.3em;
 }
 

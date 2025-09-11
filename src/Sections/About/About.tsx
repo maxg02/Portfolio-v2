@@ -16,41 +16,42 @@ import "./styles.css";
 function About() {
     return (
         <div className="app-container flex flex-col gap-10">
-            <div className="h-48 w-auto aspect-square bg-custom-lined rounded-full mx-auto flex items-center justify-center">
-                <div className="aspect-square h-[80%] relative animate-[spin_reverse_12s_linear_infinite] ">
-                    <img
-                        src={laptopimg}
-                        className="absolute left-0 top-1/2 -translate-1/2 h-[65%] animate-[spin_12s_linear_infinite]"
-                    />
-                    <img
-                        src={cupimg}
-                        className="absolute right-0 bottom-0 h-[32%] animate-[spin_12s_linear_infinite]"
-                    />
-                    <img
-                        src={mouseimg}
-                        className="absolute right-0 top-0 h-[31%] animate-[spin_12s_linear_infinite]"
-                    />
+            <div className="flex flex-col gap-10 items-center md:flex-row-reverse">
+                <div className="w-48 h-auto aspect-square bg-custom-lined rounded-full mx-auto flex items-center justify-center md:w-auto md:basis-[45%] md:mx-8">
+                    <div className="aspect-square h-[80%] relative animate-[spin_reverse_12s_linear_infinite] ">
+                        <img
+                            src={laptopimg}
+                            className="absolute left-0 top-1/2 -translate-1/2 h-[65%] animate-[spin_12s_linear_infinite]"
+                        />
+                        <img
+                            src={cupimg}
+                            className="absolute right-0 bottom-0 h-[32%] animate-[spin_12s_linear_infinite]"
+                        />
+                        <img
+                            src={mouseimg}
+                            className="absolute right-0 top-0 h-[31%] animate-[spin_12s_linear_infinite]"
+                        />
+                    </div>
+                </div>
+                <div className="md:basis-[55%]">
+                    <h2 className="max-md:text-center">About Me</h2>
+                    <p className="text-justify mb-3">
+                        I'm a &nbsp;
+                        <span className="text-custom-red pretty-text text-2xl">Web Developer</span>&nbsp;
+                        based in Dominican Republic. I hold a technical degree in Cybersecurity and I'm
+                        currently pursuing a degree in Software Engineering.
+                    </p>
+                    <p className="text-justify">
+                        I started as a self-taught developer a few years ago and since then I've been
+                        passionate about building efficient, scalable and visually appealing websites
+                        using modern technologies.
+                    </p>
                 </div>
             </div>
             <div>
-                <h2>About Me</h2>
-                <p className="text-justify mb-3">
-                    I'm a &nbsp;
-                    <span className="text-custom-red pretty-text text-2xl">Web Developer</span>&nbsp;
-                    based in Dominican Republic. I hold a technical degree in Cybersecurity and I'm
-                    currently pursuing a degree in Software Engineering.
-                </p>
-                <p className="text-justify">
-                    I started as a self-taught developer a few years ago and since then I've been
-                    passionate about building efficient, scalable and visually appealing websites using
-                    modern technologies.
-                </p>
-            </div>
-
-            <div>
                 <h3>Skills</h3>
-                <div className="flex mb-9">
-                    <Card className="w-full">
+                <div className="flex mb-9 md:items-center">
+                    <Card className="w-full md:w-[40%]">
                         <div className="flex justify-between items-center">
                             <h4>Frontend</h4>
                             <CgWebsite className="text-4xl" />
@@ -76,23 +77,27 @@ function About() {
                             </li>
                         </ul>
                     </Card>
-                    <div className="flex flex-col justify-evenly mx-6">
-                        <IconContext.Provider value={{ className: "text-custom-red text-5xl" }}>
+                    <div className="flex flex-col justify-evenly mx-6 md:flex-row md:w-[60%] md:mx-0">
+                        <IconContext.Provider
+                            value={{ className: "text-custom-red text-5xl md:text-8xl" }}
+                        >
                             <TbBrandJavascript />
                             <TbBrandCss3 />
                             <TbBrandHtml5 />
                         </IconContext.Provider>
                     </div>
                 </div>
-                <div className="flex mb-9">
-                    <div className="flex flex-col justify-evenly mx-6">
-                        <IconContext.Provider value={{ className: "text-custom-red text-5xl" }}>
+                <div className="flex mb-9 md:items-center">
+                    <div className="flex flex-col justify-evenly mx-6 md:flex-row md:w-[60%] md:mx-0">
+                        <IconContext.Provider
+                            value={{ className: "text-custom-red text-5xl md:text-8xl" }}
+                        >
                             <AiOutlinePython />
                             <DiMsqlServer />
                             <PiFileCSharp />
                         </IconContext.Provider>
                     </div>
-                    <Card className="w-full">
+                    <Card className="w-full md:w-[40%]">
                         <div className="flex justify-between items-center">
                             <h4>Backend</h4>
                             <BiCodeBlock className="text-4xl" />
