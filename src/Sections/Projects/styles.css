@@ -1,0 +1,12 @@
+@media (width >= 48rem) {
+    .starred-project:nth-child(odd) .info-container {
+        flex-direction: row-reverse;
+    }
+    .starred-project:nth-child(even) .info-container {
+        flex-direction: row;
+    }
+
+    .starred-project:nth-child(odd) .md-title-container {
+        flex-direction: row-reverse;
+    }
+}

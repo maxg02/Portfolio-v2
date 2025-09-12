@@ -34,7 +34,7 @@ function About() {
                     </div>
                 </div>
                 <div className="md:basis-[55%]">
-                    <h2 className="max-md:text-center">About Me</h2>
+                    <h2 className="max-md:text-center mb-1.5">About Me</h2>
                     <p className="text-justify mb-3">
                         I'm a &nbsp;
                         <span className="text-custom-red pretty-text text-2xl">Web Developer</span>&nbsp;

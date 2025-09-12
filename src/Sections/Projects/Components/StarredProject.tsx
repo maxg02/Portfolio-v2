@@ -5,8 +5,9 @@ import { FiExternalLink } from "react-icons/fi";
 function StarredProject({ project }: { project: project }) {
     const ProjectTitle = () => (
         <>
-            <h3>{project.title}</h3>
-            <div className="flex items-center gap-2.5 mb-6">
+            <h3 className="md:hidden">{project.title}</h3>
+            <h4 className="hidden mb-3 md:block">{project.title}</h4>
+            <div className="flex items-center gap-2.5 mb-6 md:mb-3">
                 {project.linkRepo && (
                     <a href={project.linkRepo} target="_blank" rel="noreferrer">
                         <VscGithub className="text-neutral-600 text-3xl hover:text-custom-red" />
@@ -22,18 +23,21 @@ function StarredProject({ project }: { project: project }) {
     );
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col starred-project">
             <div className="flex justify-between items-center md:hidden">
                 <ProjectTitle />
             </div>
-            <div className="gap-3 flex flex-col md:flex-row">
-                <div className="pr-3 pb-3">
+            <div className="gap-3 flex flex-col info-container md:items-center">
+                <div className="pr-3 pb-3 md:w-[50%]">
                     <div className="relative">
                         <img className="w-full aspect-video relative z-10" src={project.image} />
                         <div className="bg-custom-dotted w-full h-full aspect-video absolute -bottom-3 -right-3"></div>
                     </div>
                 </div>
-                <div>
+                <div className="md:w-[50%]">
+                    <div className="justify-between items-center hidden md:flex md-title-container">
+                        <ProjectTitle />
+                    </div>
                     <p className="text-justify">{project.description}</p>
                     <div className="flex flex-wrap justify-center gap-x-3 text-custom-red mt-3">
                         {project.stack.map((tech, key) => (

@@ -7,7 +7,7 @@ import "./styles.css";
 function Contact() {
     return (
         <div className="app-container h-dvh flex items-center justify-center flex-col gap-y-9">
-            <div className="grid grid-cols-2 grid-rows-2 w-fit gap-4 rotate-45">
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 rotate-45 aspect-square w-[max(13rem,30vw)]">
                 <a href="mailto:maxdanielgs@hotmail.com" target="_blank" rel="noreferrer">
                     <div className="contact-button hover:-translate-2 bg-custom-red">
                         <HiOutlineMail />

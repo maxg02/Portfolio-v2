@@ -14,7 +14,7 @@ export const starredProjectsList: project[] = [
         title: "Project 1",
         image: testImg,
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue. Vestibulum auctorentum sit amet. Pellentesque commodo lacus at sodale",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
         stack: ["React", "Tailwind", "Asp.Net", "C#", "Sql Server", "Redux", "React-Router"],
         linkWeb: "testLink",
         linkRepo: "testLink",
@@ -23,7 +23,7 @@ export const starredProjectsList: project[] = [
         title: "Project 2",
         image: testImg,
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue. Vestibulum auctorentum sit amet. Pellentesque commodo lacus at sodale",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
         stack: ["React", "Tailwind", "Asp.Net", "C#", "Sql Server", "Redux", "React-Router"],
         linkWeb: "testLink",
     },
