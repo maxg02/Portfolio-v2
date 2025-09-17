@@ -3,3 +3,25 @@
         transform: rotate(-360deg);
     }
 }
+
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (width >= 48rem) {
+    .floating-icon {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .floating-icon:nth-child(even) {
+        animation-delay: 0.5s;
+    }
+}

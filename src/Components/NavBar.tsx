@@ -20,7 +20,7 @@ function NavBar() {
 
     return (
         <nav ref={navRef} className="sticky top-[-1px] w-full py-2 z-50 bg-[#242424]">
-            <div className="flex w-full mx-auto justify-evenly max-w-[30rem]">
+            <div className="flex w-full mx-auto justify-evenly max-w-[30rem] xl:max-w-[36rem]">
                 {sections.map((section) => (
                     <div className="flex flex-col items-center gap-y-1" key={section}>
                         <p>{section}</p>

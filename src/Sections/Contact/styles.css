@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .contact-button {
-    @apply aspect-square flex items-center justify-center text-white border-neutral-600 border-4 lg:bg-transparent lg:text-neutral-600;
+    @apply aspect-square flex items-center justify-center text-white border-neutral-600 border-4 xl:bg-transparent xl:text-neutral-600;
     transition: all 0.3s ease-out;
 }
 

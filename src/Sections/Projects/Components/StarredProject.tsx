@@ -27,7 +27,7 @@ function StarredProject({ project }: { project: project }) {
             <div className="flex justify-between items-center md:hidden">
                 <ProjectTitle />
             </div>
-            <div className="gap-3 flex flex-col info-container md:items-center">
+            <div className="gap-3 flex flex-col info-container md:items-center xl:gap-7">
                 <div className="pr-3 pb-3 md:w-[50%]">
                     <div className="relative">
                         <img className="w-full aspect-video relative z-10" src={project.image} />

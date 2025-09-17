@@ -16,8 +16,8 @@ import "./styles.css";
 function About() {
     return (
         <div className="app-container flex flex-col gap-10">
-            <div className="flex flex-col gap-10 items-center md:flex-row-reverse">
-                <div className="w-48 h-auto aspect-square bg-custom-lined rounded-full mx-auto flex items-center justify-center md:w-auto md:basis-[45%] md:mx-8">
+            <div className="flex flex-col gap-10 items-center md:flex-row-reverse xl:gap-24">
+                <div className="w-48 h-auto aspect-square bg-custom-lined rounded-full mx-auto flex items-center justify-center md:w-auto md:basis-[45%] md:mx-8 xl:mx-12">
                     <div className="aspect-square h-[80%] relative animate-[spin_reverse_12s_linear_infinite] ">
                         <img
                             src={laptopimg}
@@ -50,7 +50,7 @@ function About() {
             </div>
             <div>
                 <h3>Skills</h3>
-                <div className="flex mb-9 md:items-center">
+                <div className="flex mb-9 md:items-center md:mb-14">
                     <Card className="w-full md:w-[40%]">
                         <div className="flex justify-between items-center">
                             <h4>Frontend</h4>
@@ -79,7 +79,10 @@ function About() {
                     </Card>
                     <div className="flex flex-col justify-evenly mx-6 md:flex-row md:w-[60%] md:mx-0">
                         <IconContext.Provider
-                            value={{ className: "text-custom-red text-5xl md:text-8xl" }}
+                            value={{
+                                className:
+                                    "text-custom-red text-5xl md:text-8xl floating-icon xl:text-[9vw]",
+                            }}
                         >
                             <TbBrandJavascript />
                             <TbBrandCss3 />
@@ -90,7 +93,10 @@ function About() {
                 <div className="flex mb-9 md:items-center">
                     <div className="flex flex-col justify-evenly mx-6 md:flex-row md:w-[60%] md:mx-0">
                         <IconContext.Provider
-                            value={{ className: "text-custom-red text-5xl md:text-8xl" }}
+                            value={{
+                                className:
+                                    "text-custom-red text-5xl md:text-8xl floating-icon xl:text-[9vw]",
+                            }}
                         >
                             <AiOutlinePython />
                             <DiMsqlServer />
