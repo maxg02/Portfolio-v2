@@ -28,10 +28,10 @@ function StarredProject({ project }: { project: project }) {
                 <ProjectTitle />
             </div>
             <div className="gap-3 flex flex-col info-container md:items-center xl:gap-7">
-                <div className="pr-3 pb-3 md:w-[50%]">
+                <div className="md:w-[50%] project-image-container">
                     <div className="relative">
                         <img className="w-full aspect-video relative z-10" src={project.image} />
-                        <div className="bg-custom-dotted w-full h-full aspect-video absolute -bottom-3 -right-3"></div>
+                        <div className="bg-custom-dotted"></div>
                     </div>
                 </div>
                 <div className="md:w-[50%]">
