@@ -29,15 +29,15 @@ function App() {
     }, []);
 
     return (
-        <div id="appContainer">
-            <div ref={banner} className="text-center pb-8 md:pb-28 xl:pb-8">
+        <div id="appContainer " className="flex flex-col items-center">
+            <div ref={banner} className="text-center pb-8 md:pb-28 xl:pb-8 2xl:pb-20">
                 <h1 className="text-[13vw] leading-none xl:text-[10vw]">Max García</h1>
                 <span className="pretty-text text-[8.5vw] text-custom-red leading-none xl:text-[4.5vw]">
                     Web Developer
                 </span>
             </div>
             <NavBar />
-            <div ref={scrollArrow} className="text-center py-4">
+            <div ref={scrollArrow} className="text-center py-4 mb-6">
                 <p className="opacity-50 mb-5 leading-5 text-center">
                     Let's know each
                     <br /> other
@@ -54,9 +54,6 @@ function App() {
             <section>
                 <Contact />
             </section>
-            <footer className="py-4 text-center">
-                <p>Design and Built by Max García</p>
-            </footer>
         </div>
     );
 }

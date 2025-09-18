@@ -6,11 +6,5 @@
 }
 
 .contact-button:hover {
-    @apply border-0;
-}
-
-.contact-button > * {
-    @apply -rotate-45;
-    font-size: max(3rem, 7.5vw);
-    color: inherit;
+    @apply border-2 text-white border-white;
 }

@@ -15,18 +15,25 @@
     }
 
     .starred-project:nth-child(odd) .project-image-container {
-        @apply pr-3 pb-3;
-    }
-
-    .starred-project:nth-child(even) .project-image-container {
         @apply pl-3 pb-3;
     }
 
+    .starred-project:nth-child(even) .project-image-container {
+        @apply pr-3 pb-3;
+    }
+
     .starred-project:nth-child(odd) .bg-custom-dotted {
-        @apply w-full h-full aspect-video absolute -bottom-3 -right-3;
+        @apply w-full h-full aspect-video absolute -bottom-3 -left-3;
     }
 
     .starred-project:nth-child(even) .bg-custom-dotted {
-        @apply w-full h-full aspect-video absolute -bottom-3 -left-3;
+        @apply w-full h-full aspect-video absolute -bottom-3 -right-3;
+    }
+
+    .starred-project:nth-child(even) .project-stack {
+        @apply md:justify-end;
+    }
+    .starred-project:nth-child(odd) .project-stack {
+        @apply md:justify-start;
     }
 }
