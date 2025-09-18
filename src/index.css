@@ -41,7 +41,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .app-container {
-    @apply px-8 w-screen md:px-14 xl:px-28 xl:mb-12 xl:max-w-[1450px];
+    @apply px-8 w-screen md:px-14 xl:px-28 xl:max-w-[1450px];
 }
 
 h1 {

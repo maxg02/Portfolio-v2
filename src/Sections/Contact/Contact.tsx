@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 
 function Contact() {
     return (
-        <div className="app-container h-dvh flex items-center justify-center flex-col gap-y-9 relative mb-0! bg-blue-300">
+        <div className="app-container h-dvh flex items-center justify-center flex-col gap-y-9 relative">
             <div className="grid grid-cols-2 grid-rows-2 text-[max(3rem, 7.5vw)] gap-4 rotate-45 aspect-square w-[max(13rem,30vw)] xl:w-[max(10rem,20vw)]">
                 <IconContext.Provider value={{ className: "-rotate-45 text-inherit", size: "50%" }}>
                     <a href="mailto:maxdanielgs@hotmail.com" target="_blank" rel="noreferrer">

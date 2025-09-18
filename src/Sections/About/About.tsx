@@ -15,7 +15,7 @@ import "./styles.css";
 
 function About() {
     return (
-        <div className="app-container flex flex-col gap-10 bg-amber-200">
+        <div className="app-container flex flex-col gap-10 mb-16 xl:gap-14 xl:mb-32">
             <div className="flex flex-col gap-10 items-center md:flex-row-reverse xl:gap-24">
                 <div className="w-48 h-auto aspect-square bg-custom-lined rounded-full mx-auto flex items-center justify-center md:w-auto md:basis-[45%] md:mx-8 xl:mx-12">
                     <div className="aspect-square h-[80%] relative animate-[spin_reverse_12s_linear_infinite] ">

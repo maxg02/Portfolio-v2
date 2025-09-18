@@ -13,9 +13,11 @@ function Projects() {
     ));
 
     return (
-        <div className="app-container flex flex-col bg-red-400">
-            <h2 className="text-center mb-2 md:mb-10 xl:mb-16">Projects</h2>
-            <div className="flex flex-col gap-y-9 mb-9 md:gap-y-20">{starredProjects}</div>
+        <div className="app-container flex flex-col">
+            <h2 className="text-center mb-10 md:mb-12 xl:mb-16">Projects</h2>
+            <div className="flex flex-col gap-y-9 mb-9 md:mb-12 md:gap-y-20 xl:mb-16">
+                {starredProjects}
+            </div>
             <h3>Other Projects</h3>
             <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-3 w-full">
                 {commonProjects}
