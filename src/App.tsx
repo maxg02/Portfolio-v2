@@ -29,7 +29,7 @@ function App() {
     }, []);
 
     return (
-        <div id="appContainer " className="flex flex-col items-center">
+        <div id="Home" className="flex flex-col items-center">
             <div ref={banner} className="text-center pb-8 md:pb-28 xl:pb-8 2xl:pb-20">
                 <h1 className="text-[13vw] leading-none xl:text-[10vw]">Max García</h1>
                 <span className="pretty-text text-[8.5vw] text-custom-red leading-none xl:text-[4.5vw]">
@@ -42,16 +42,20 @@ function App() {
                     Let's know each
                     <br /> other
                 </p>
-                <FontAwesomeIcon icon={faArrowDown} className="text-custom-red" size={"3x"} />
+                <FontAwesomeIcon
+                    icon={faArrowDown}
+                    className="text-custom-red animate-bounce"
+                    size={"3x"}
+                />
             </div>
 
-            <section>
+            <section id="About">
                 <About />
             </section>
-            <section>
+            <section id="Projects">
                 <Projects />
             </section>
-            <section>
+            <section id="Contact">
                 <Contact />
             </section>
         </div>
