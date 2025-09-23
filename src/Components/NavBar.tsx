@@ -1,13 +1,17 @@
 import { useLayoutEffect, useRef, useState } from "react";
 
+const sections = ["Home", "About", "Projects", "Contact"] as const;
+type Section = (typeof sections)[number];
+
 function NavBar() {
     const navRef = useRef<HTMLDivElement | null>(null);
-    const [currentSection, setCurrentSection] = useState<(typeof sections)[number]>("Home");
-
-    const sections = ["Home", "About", "Projects", "Contact"];
+    const [currentSection, setCurrentSection] = useState<Section>("Home");
+    const sectionRefsRef = useRef<Record<Section, HTMLElement | null>>(
+        {} as Record<Section, HTMLElement | null>
+    );
 
     useLayoutEffect(() => {
-        if (!navRef) return;
+        if (!navRef.current) return;
 
         const navbar = navRef.current;
 
@@ -16,19 +20,26 @@ function NavBar() {
             { threshold: [1] }
         );
 
-        observer.observe(navbar!);
+        observer.observe(navbar);
 
-        // set current section based on scroll position
+        // Cache section refs
+        sections.forEach((section) => {
+            sectionRefsRef.current[section] = document.getElementById(section);
+        });
+
+        // Optimized scroll handler
         const handleScroll = () => {
-            const scrollPosition = window.scrollY + (navbar?.offsetHeight || 0) + 1;
-            let selected = "Home";
+            const navbarHeight = navbar?.offsetHeight || 0;
+            const scrollPosition = window.scrollY + navbarHeight + 1;
+            let selected: Section = "Home";
+
             for (const section of sections) {
-                const element = document.getElementById(section);
+                const element = sectionRefsRef.current[section];
                 if (element && element.offsetTop <= scrollPosition) {
                     selected = section;
                 }
             }
-            setCurrentSection(selected as (typeof sections)[number]);
+            setCurrentSection(selected);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -36,7 +47,7 @@ function NavBar() {
     }, []);
 
     return (
-        <nav ref={navRef} className="sticky top-[-1px] w-full py-2 z-50 bg-[#242424]">
+        <nav ref={navRef} className="sticky top-[-1px] w-full py-2 bg-[#242424]">
             <div className="flex w-full mx-auto justify-evenly max-w-[30rem] xl:max-w-[36rem]">
                 {sections.map((section) => (
                     <a

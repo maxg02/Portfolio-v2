@@ -101,8 +101,12 @@ nav .nav-dot {
     transition: all 0.3s linear;
 }
 
+nav a:hover .nav-dot {
+    @apply bg-custom-red/35;
+}
+
 nav.is-pinned {
-    @apply shadow-md;
+    @apply shadow-md z-50;
 }
 
 nav.is-pinned .nav-dot {
