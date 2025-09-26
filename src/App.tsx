@@ -50,23 +50,8 @@ function App() {
                     size={"3x"}
                 />
             </div>
-            <div className="absolute top-0 left-0 w-screen h-screen z-10 overflow-hidden">
-                <svg width="100%" height="100%" viewBox="0 0 2000 1000" preserveAspectRatio="none">
-                    <path
-                        opacity=".5"
-                        d="M 1200 0 C 700 600 300 500 0 900"
-                        stroke="#BE3C45"
-                        stroke-width="4"
-                        stroke-dasharray="23 23"
-                        id="route1"
-                        fill="none"
-                        vectorEffect={"non-scaling-stroke"}
-                        ref={pathRef}
-                    />
-                </svg>
-            </div>
 
-            <PaperPlane pathRef={pathRef} />
+            <PaperPlane pathD="M 1200 -30 C 700 700 300 500 -35 900" />
 
             <section id="About">
                 <About />
