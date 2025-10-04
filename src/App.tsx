@@ -51,16 +51,19 @@ function App() {
                 />
             </div>
 
-            <PaperPlane pathD="M 1200 -30 C 700 700 300 500 -35 900" />
+            <PaperPlane pathD="M 1200 -30 C 700 700 300 500 -35 900" className="h-screen!" duration={4} />
 
             <section id="About">
                 <About />
+                <PaperPlane pathD="M -30 70 C 1300 300 1200 900 2035 900" />
             </section>
             <section id="Projects">
                 <Projects />
+                <PaperPlane pathD="M 2035 50 C 800 80 1000 670 -35 700" />
             </section>
             <section id="Contact">
                 <Contact />
+                <PaperPlane pathD="M 2035 600 C 1200 1700 1000 500 -35 400" />
             </section>
         </div>
     );

@@ -112,3 +112,7 @@ nav.is-pinned {
 nav.is-pinned .nav-dot {
     @apply rounded-[3px] w-full h-2 -mt-1;
 }
+
+section {
+    @apply w-screen flex justify-center relative;
+}

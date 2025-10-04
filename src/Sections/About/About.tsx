@@ -132,7 +132,6 @@ function About() {
                     </Card>
                 </div>
             </div>
-            <PaperPlane pathD="M 1200 -30 C 700 700 300 500 -35 900" />
         </div>
     );
 }
