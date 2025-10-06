@@ -75,7 +75,9 @@ function PaperPlane({ pathD, className = "", duration = 6 }: PaperPlaneProps) {
 
     return (
         <>
-            <div className={`absolute top-0 left-0 w-screen h-full z-10 overflow-hidden ${className}`}>
+            <div
+                className={`absolute top-0 left-0 w-screen h-full z-10 overflow-hidden pointer-events-none ${className}`}
+            >
                 <svg width="100%" height="100%" viewBox="0 0 2000 1000" preserveAspectRatio="none">
                     <path
                         opacity=".1"
