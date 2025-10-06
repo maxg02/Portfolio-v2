@@ -1,4 +1,3 @@
-import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { VscGithub } from "react-icons/vsc";
 import { PiLinkedinLogoBold } from "react-icons/pi";

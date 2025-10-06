@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import planeSvg from "../assets/plane.svg";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";

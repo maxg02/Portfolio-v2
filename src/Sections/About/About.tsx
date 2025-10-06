@@ -12,7 +12,6 @@ import laptopimg from "./assets/LaptopNoBG.png";
 import cupimg from "./assets/CupNoBG.png";
 import mouseimg from "./assets/MouseNoBG.png";
 import "./styles.css";
-import PaperPlane from "@/Components/PaperPlane";
 
 function About() {
     return (

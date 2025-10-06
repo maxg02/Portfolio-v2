@@ -11,7 +11,6 @@ import PaperPlane from "./Components/PaperPlane";
 function App() {
     const banner = useRef<HTMLDivElement | null>(null);
     const scrollArrow = useRef<HTMLDivElement | null>(null);
-    const pathRef = useRef<SVGPathElement | null>(null);
 
     useLayoutEffect(() => {
         const navBar = document.querySelector("nav");
