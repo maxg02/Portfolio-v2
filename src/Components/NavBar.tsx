@@ -27,15 +27,23 @@ function NavBar() {
             sectionRefsRef.current[section] = document.getElementById(section);
         });
 
+        // Get adjusted scroll position for a section
+        const getAdjustedPosition = (section: Section) => {
+            const element = sectionRefsRef.current[section];
+            const navbarHeight = navbar?.offsetHeight || 0;
+            if (!element) return 0;
+            return section === "Contact" ? element.offsetTop : element.offsetTop - navbarHeight + 2;
+        };
+
         // Optimized scroll handler
         const handleScroll = () => {
-            const navbarHeight = navbar?.offsetHeight || 0;
-            const scrollPosition = window.scrollY + navbarHeight + 1;
+            const scrollPosition = window.scrollY;
             let selected: Section = "Home";
 
             for (const section of sections) {
-                const element = sectionRefsRef.current[section];
-                if (element && element.offsetTop <= scrollPosition) {
+                const adjustedPosition = getAdjustedPosition(section);
+                if (scrollPosition >= adjustedPosition - 5) {
+                    // Small threshold for better detection
                     selected = section;
                 }
             }
@@ -50,10 +58,16 @@ function NavBar() {
         const element = sectionRefsRef.current[section];
         const navbar = navRef.current;
         if (element && navbar) {
-            window.scroll(
-                0,
-                section == "Contact" ? element.offsetTop : element.offsetTop - navbar.offsetHeight + 2
-            );
+            const targetPosition =
+                section === "Contact" ? element.offsetTop : element.offsetTop - navbar.offsetHeight + 2;
+
+            window.scroll({
+                top: targetPosition,
+                behavior: "smooth",
+            });
+
+            // Update current section immediately
+            setCurrentSection(section);
         }
     };
 
