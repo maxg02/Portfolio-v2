@@ -54,11 +54,10 @@ export const commonProjectsList: project[] = [
         linkRepo: "https://github.com/maxg02/Fitness-Calculator",
     },
     {
-        title: "Project 4",
+        title: "Python AddressBook",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
-        stack: ["Technology4", "Technology4", "Technology4", "Technology4"],
-        linkWeb: "testLink",
-        linkRepo: "testLink",
+            "A desktop GUI application for managing contacts, allowing users to add, view, search, and delete contacts.",
+        stack: ["Python", "SQLite", "Tkinter"],
+        linkRepo: "https://github.com/maxg02/GUI-AddressBook-Python",
     },
 ];
