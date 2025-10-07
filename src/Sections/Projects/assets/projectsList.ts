@@ -31,27 +31,27 @@ export const starredProjectsList: project[] = [
 
 export const commonProjectsList: project[] = [
     {
-        title: "Project 1",
+        title: "Portfolio V1",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
-        stack: ["Technology", "Technology", "Technology", "Technology", "Technology"],
-        linkWeb: "testLink",
-        linkRepo: "testLink",
+            "First version of my portfolio showcasing my skills and projects, and some dynamic elements like vertical and horizontal animated carrousels.",
+        stack: ["React", "Bootstrap", "SASS"],
+        linkWeb: "https://maxg02.github.io/Portfolio-v1/",
+        linkRepo: "https://github.com/maxg02/Portfolio-v1",
     },
     {
-        title: "Project 2",
+        title: "Max Arcade",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
-        stack: ["Technology2", "Technology2", "Technology2", "Technology2"],
-        linkWeb: "testLink",
+            "A simple CLI arcade game collection featuring classic games like Tic-Tac-Toe, Hangman, and a Number Guessing game.",
+        stack: ["C#", ".NET"],
+        linkWeb: "https://github.com/maxg02/CSharp-Max-Arcade",
     },
     {
-        title: "Project 3",
+        title: "Fitness Calculator",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
-        stack: ["Technology3", "Technology3", "Technology3", "Technology3", "Technology3"],
-        linkWeb: "testLink",
-        linkRepo: "testLink",
+            "A simple calculator to compute Body Mass Index (BMI) and Basal Metabolic Rate (BMR) based on user inputs.",
+        stack: ["Bootstrap", "SCSS"],
+        linkWeb: "https://maxg02.github.io/Fitness-Calculator/",
+        linkRepo: "https://github.com/maxg02/Fitness-Calculator",
     },
     {
         title: "Project 4",
