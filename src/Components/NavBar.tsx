@@ -52,25 +52,25 @@ function NavBar() {
         if (element && navbar) {
             window.scroll(
                 0,
-                section == "Contact" ? element.offsetTop : element.offsetTop - navbar.offsetHeight
+                section == "Contact" ? element.offsetTop : element.offsetTop - navbar.offsetHeight + 2
             );
         }
     };
 
     return (
-        <nav ref={navRef} className="sticky top-[-1px] w-full py-2 bg-[#242424]/5">
+        <nav ref={navRef} className="sticky top-[-1px] w-full py-2 bg-[#242424]">
             <div className="flex w-full mx-auto justify-evenly max-w-[30rem] xl:max-w-[36rem]">
                 {sections.map((section) => (
-                    <button
+                    <a
                         onClick={() => scrollToSection(section)}
-                        className="flex flex-col items-center gap-y-1 px-6"
+                        className="flex flex-col items-center gap-y-1 px-6 cursor-pointer"
                         key={section}
                     >
                         <p>{section}</p>
                         <div
                             className={`nav-dot ${currentSection === section && "bg-custom-red!"}`}
                         ></div>
-                    </button>
+                    </a>
                 ))}
             </div>
         </nav>
