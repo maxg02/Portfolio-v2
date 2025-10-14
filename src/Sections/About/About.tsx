@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 import { TbBrandHtml5 } from "react-icons/tb";
 import { TbBrandCss3 } from "react-icons/tb";
 import { TbBrandJavascript } from "react-icons/tb";
-import { CgWebsite } from "react-icons/cg";
+import { CgFileDocument, CgWebsite } from "react-icons/cg";
 import { BiCodeBlock } from "react-icons/bi";
 import { AiOutlinePython } from "react-icons/ai";
 import { DiMsqlServer } from "react-icons/di";
@@ -11,6 +11,7 @@ import { PiFileCSharp } from "react-icons/pi";
 import laptopimg from "./assets/LaptopNoBG.png";
 import cupimg from "./assets/CupNoBG.png";
 import mouseimg from "./assets/MouseNoBG.png";
+import cv from "./assets/cv.pdf";
 import "./styles.css";
 
 function About() {
@@ -41,11 +42,18 @@ function About() {
                         based in Dominican Republic. I hold a technical degree in Cybersecurity and I'm
                         currently pursuing a degree in Software Engineering.
                     </p>
-                    <p className="text-justify">
+                    <p className="text-justify mb-3">
                         I started as a self-taught developer a few years ago and since then I've been
                         passionate about building efficient, scalable and visually appealing websites
                         using modern technologies.
                     </p>
+                    <button
+                        className="flex items-center text-custom-red cursor-pointer border-2 border-custom-red px-5 py-3 rounded-2xl hover:bg-custom-red hover:text-white"
+                        onClick={() => window.open(cv)}
+                    >
+                        <CgFileDocument className="me-2 text-2xl" />
+                        <span className="font-body-normal">See Resume</span>
+                    </button>
                 </div>
             </div>
             <div>

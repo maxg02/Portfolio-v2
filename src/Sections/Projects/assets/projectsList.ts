@@ -1,4 +1,4 @@
-import testImg from "../assets/projectimgs/testproj.jpg";
+import tulumProjectImg from "../assets/projectimgs/tulumProject.webp";
 
 export type project = {
     title: string;
@@ -12,7 +12,7 @@ export type project = {
 export const starredProjectsList: project[] = [
     {
         title: "Tulum",
-        image: testImg,
+        image: tulumProjectImg,
         description:
             "A web app to manage your personal finances, it helps you to keep track of your daily income and expenses, allowing you to detect the categories where you spend the most, manage budget limits for every category and the creation of saving goals with a simple and intuitive interface and a dashboard to centralize all your information.",
         stack: [
@@ -29,14 +29,14 @@ export const starredProjectsList: project[] = [
         linkWeb: "testLink",
         linkRepo: "testLink",
     },
-    {
-        title: "Project 2",
-        image: testImg,
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
-        stack: ["React", "Tailwind", "Asp.Net", "C#", "Sql Server", "Redux", "React-Router"],
-        linkWeb: "testLink",
-    },
+    // {
+    //     title: "Project 2",
+    //     image: testImg,
+    //     description:
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapienlam quis imperdiet augue.",
+    //     stack: ["React", "Tailwind", "Asp.Net", "C#", "Sql Server", "Redux", "React-Router"],
+    //     linkWeb: "testLink",
+    // },
 ];
 
 export const commonProjectsList: project[] = [
