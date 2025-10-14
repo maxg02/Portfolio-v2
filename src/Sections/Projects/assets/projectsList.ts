@@ -26,8 +26,8 @@ export const starredProjectsList: project[] = [
             "Redux",
             "React-Router",
         ],
-        linkWeb: "testLink",
-        linkRepo: "testLink",
+        linkWeb: "https://tulum-chi.vercel.app/",
+        linkRepo: "https://github.com/maxg02/Tulum",
     },
     // {
     //     title: "Project 2",
@@ -69,5 +69,13 @@ export const commonProjectsList: project[] = [
             "A desktop GUI application for managing contacts, allowing users to add, view, search, and delete contacts.",
         stack: ["Python", "SQLite", "Tkinter"],
         linkRepo: "https://github.com/maxg02/GUI-AddressBook-Python",
+    },
+    {
+        title: "W3Schools' Clone",
+        description:
+            "A simple frontend clone of W3schools' homepage, this was my first web development project",
+        stack: ["JavaScript", "HTML", "CSS"],
+        linkWeb: "https://maxg02.github.io/W3School-Homepage-Clone/",
+        linkRepo: "https://github.com/maxg02/W3school-Homepage-Clone",
     },
 ];
