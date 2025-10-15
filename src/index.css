@@ -78,6 +78,7 @@ p,
 span {
     font-family: Karla;
     font-weight: 300;
+    @apply 2xl:text-lg;
 }
 
 .font-body-normal {
