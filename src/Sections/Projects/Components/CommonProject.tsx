@@ -5,7 +5,7 @@ import Card from "@/Components/Card";
 
 function CommonProject({ project }: { project: project }) {
     return (
-        <Card>
+        <Card className="h-full">
             <div className="flex justify-between">
                 <h4>{project.title}</h4>
                 <div className="flex items-center gap-2.5">
@@ -21,9 +21,8 @@ function CommonProject({ project }: { project: project }) {
                     )}
                 </div>
             </div>
-
-            <p className="text-justify">{project.description}</p>
-            <div className="flex flex-wrap justify-center gap-x-3 text-custom-red mt-auto">
+            <p className="text-justify my-auto">{project.description}</p>
+            <div className="flex flex-wrap justify-center gap-x-3 text-custom-red">
                 {project.stack.map((tech, key) => (
                     <span key={key}>{tech}</span>
                 ))}

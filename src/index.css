@@ -45,6 +45,8 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    @apply selection:text-white selection:bg-custom-red;
 }
 .app-container {
     @apply px-8 w-screen md:px-14 xl:px-28 xl:max-w-[1450px];
