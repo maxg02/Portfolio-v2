@@ -38,11 +38,13 @@ function About() {
                     <h2 className="max-md:text-center mb-1.5">About Me</h2>
                     <p className="text-justify mb-3">
                         I'm a &nbsp;
-                        <span className="text-custom-red pretty-text text-2xl">Web Developer</span>&nbsp;
-                        based in Dominican Republic. I hold a technical degree in Cybersecurity and I'm
-                        currently pursuing a degree in Software Engineering.
+                        <span className="text-custom-red pretty-text text-2xl! 2xl:text-3xl!">
+                            Web Developer
+                        </span>
+                        &nbsp; based in Dominican Republic. I hold a technical degree in Cybersecurity and
+                        I'm currently pursuing a degree in Software Engineering.
                     </p>
-                    <p className="text-justify mb-3">
+                    <p className="text-justify mb-3 2xl:mb-6">
                         I started as a self-taught developer a few years ago and since then I've been
                         passionate about building efficient, scalable and visually appealing websites
                         using modern technologies.

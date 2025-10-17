@@ -33,7 +33,7 @@ function App() {
         <div id="Home" className="flex flex-col items-center relative">
             <div ref={banner} className="text-center pb-8 md:pb-28 xl:pb-8 2xl:pb-20">
                 <h1 className="text-[13vw] leading-none xl:text-[10vw]">Max García</h1>
-                <span className="pretty-text text-[8.5vw] text-custom-red leading-none xl:text-[4.5vw]">
+                <span className="pretty-text text-[8.5vw]! text-custom-red leading-none xl:text-[4.5vw]!">
                     Web Developer
                 </span>
             </div>
