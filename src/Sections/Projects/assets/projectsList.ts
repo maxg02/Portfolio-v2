@@ -53,7 +53,7 @@ export const commonProjectsList: project[] = [
         description:
             "A simple CLI arcade game collection featuring classic games like Tic-Tac-Toe, Hangman, and a Number Guessing game.",
         stack: ["C#", ".NET"],
-        linkWeb: "https://github.com/maxg02/CSharp-Max-Arcade",
+        linkRepo: "https://github.com/maxg02/CSharp-Max-Arcade",
     },
     {
         title: "Fitness Calculator",
@@ -73,9 +73,9 @@ export const commonProjectsList: project[] = [
     {
         title: "W3Schools' Clone",
         description:
-            "A simple frontend clone of W3schools' homepage, this was my first web development project",
+            "A simple frontend clone of W3Schools' homepage, this was my first web development project",
         stack: ["JavaScript", "HTML", "CSS"],
-        linkWeb: "https://maxg02.github.io/W3School-Homepage-Clone/",
+        linkWeb: "https://maxg02.github.io/W3school-Homepage-Clone/",
         linkRepo: "https://github.com/maxg02/W3school-Homepage-Clone",
     },
 ];
