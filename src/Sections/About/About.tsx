@@ -50,7 +50,7 @@ function About() {
                         using modern technologies.
                     </p>
                     <button
-                        className="flex items-center text-custom-red cursor-pointer border-2 border-custom-red px-5 py-3 rounded-2xl hover:bg-custom-red hover:text-white"
+                        className="flex items-center text-custom-red cursor-pointer border-2 border-custom-red px-5 py-3 rounded-2xl hover:bg-custom-red hover:text-white transition"
                         onClick={() => window.open(cv)}
                     >
                         <CgFileDocument className="me-2 text-2xl" />
